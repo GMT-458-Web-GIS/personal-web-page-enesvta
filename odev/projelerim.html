@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projelerim - Kişisel Portfolyo</title>
+    <title>Projelerim - Enes Şavata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +21,179 @@
 
     <main>
         <section id="projects">
-            <h1>Projelerim</h1>
-            <p>Buraya daha önce yaptığım projeler gelecek.</p>
+            <div class="projects-header">
+                <h1>Projelerim</h1>
+                <p>Harita mühendisliği ve web teknolojilerini birleştiren yenilikçi projelerim. Aşağıda kategorilere göre filtreleyebilirsiniz.</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="web-mapping">Web Haritalama</button>
+                <button class="filter-btn" data-filter="gis">Coğrafi Analiz</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="3d">3D Görselleştirme</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Proje 1 -->
+                <div class="project-card" data-category="web-mapping">
+                    <div class="project-image">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Haritalama</span>
+                        <h3 class="project-title">İstanbul Trafik Analiz Platformu</h3>
+                        <p class="project-description">
+                            OpenLayers kullanarak geliştirdiğim, İstanbul'un trafik yoğunluğunu 
+                            gerçek zamanlı olarak görselleştiren interaktif harita uygulaması.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">OpenLayers</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API Entegrasyonu</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proje 2 -->
+                <div class="project-card" data-category="gis">
+                    <div class="project-image">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Coğrafi Analiz</span>
+                        <h3 class="project-title">Yeşil Alan Optimizasyon Sistemi</h3>
+                        <p class="project-description">
+                            Şehir planlamada yeşil alanların optimizasyonu için Python ve QGIS 
+                            kullanarak geliştirdiğim coğrafi veri analiz platformu.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">QGIS</span>
+                            <span class="project-tag">Veri Analizi</span>
+                            <span class="project-tag">Optimizasyon</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proje 3 -->
+                <div class="project-card" data-category="3d">
+                    <div class="project-image">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">3D Görselleştirme</span>
+                        <h3 class="project-title">3D İnteraktif Kent Modeli</h3>
+                        <p class="project-description">
+                            WebGL ve Three.js kullanarak geliştirdiğim, kullanıcıların etkileşimde 
+                            bulunabildiği 3 boyutlu kent modeli ve planlama aracı.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Three.js</span>
+                            <span class="project-tag">WebGL</span>
+                            <span class="project-tag">3D Modelleme</span>
+                            <span class="project-tag">Interaktif</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proje 4 -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Front-end</span>
+                        <h3 class="project-title">Responsive Portfolyo Websitesi</h3>
+                        <p class="project-description">
+                            Modern ve responsive tasarım prensipleriyle geliştirdiğim, 
+                            tüm cihazlarda mükemmel çalışan kişisel portfolyo websitesi.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proje 5 -->
+                <div class="project-card" data-category="web-mapping">
+                    <div class="project-image">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Haritalama</span>
+                        <h3 class="project-title">Akıllı Rota Planlayıcı</h3>
+                        <p class="project-description">
+                            Leaflet.js kullanarak geliştirdiğim, çoklu nokta arasında 
+                            en optimize rotayı hesaplayan interaktif harita uygulaması.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Leaflet.js</span>
+                            <span class="project-tag">Routing API</span>
+                            <span class="project-tag">Optimizasyon</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proje 6 -->
+                <div class="project-card" data-category="gis">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Coğrafi Analiz</span>
+                        <h3 class="project-title">Arazi Kullanım Analiz Paneli</h3>
+                        <p class="project-description">
+                            Coğrafi verileri işleyerek arazi kullanım değişimlerini 
+                            analiz eden ve görselleştiren web tabanlı analiz paneli.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">GeoServisler</span>
+                            <span class="project-tag">Veri Görselleştirme</span>
+                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Analitik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Telif Hakkı © 2025 - [Adın Soyadın]</p>
+        <p>Telif Hakkı © 2025 - Enes Şavata</p>
     </footer>
+
+    <script>
+        // Filtreleme Fonksiyonu
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Aktif butonu güncelle
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Projeleri filtrele
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
