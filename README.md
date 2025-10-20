@@ -4,13 +4,13 @@
 
 A modern personal portfolio website showcasing skills in web development and geospatial engineering.
 
-## 🛠️ Built With
+##  Built With
 - **Custom HTML/CSS/JS** - Original design and code
 - **OpenLayers** - Interactive mapping library
 - **Font Awesome** - Icons
 - **External Map Services** - OSM, Esri, CartoDB tiles
 
-## ⏱️ Development
+##  Development
 - **Total Hours**: ~40 hours
 - **AI Assistance**: 8 hours  - Content optimization and code suggestions
 - **Manual Coding**: 32 hours - Original implementation
@@ -23,7 +23,7 @@ A modern personal portfolio website showcasing skills in web development and geo
 - Project showcase with filtering
 - Modern animations and UI/UX
 
-## 📱Pages
+## Pages
 - Homepage with hero section and interactive map
 - About me with skills and experience
 - Projects gallery with category filters
