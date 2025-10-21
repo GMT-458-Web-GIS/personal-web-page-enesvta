@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Şavata - Kişisel Portfolyo</title>
+   <link rel="stylesheet" href="style.css">
+    <!-- OpenLayers CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="projelerim.html">Projelerim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="typewriter">
+                    <h1>Merhaba, Ben Enes Şavata</h1>
+                </div>
+                
+                <p class="subtitle">
+                    Emniyet teşkilatının operasyonel ihtiyaçlarına yönelik olarak, geleneksel haritacılık disiplinini <span class="accent-text">ileri dijital analitik teknolojilerle</span> entegre ediyorum. <span class="accent-text">Uzaktan algılama, görüntü işleme ve yapay zeka algoritmalarını</span> kullanarak, operasyonel verileri istihbari sistemlere dönüştürüyor ve kamu güvenliği için inovatif çözümler geliştiriyorum.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="projelerim.html" class="btn btn-primary">
+                        <i class="fas fa-rocket" style="margin-right: 10px;"></i>
+                        Projelerimi İncele
+                    </a>
+                    <a href="hakkimda.html" class="btn btn-secondary">
+                        <i class="fas fa-user" style="margin-right: 10px;"></i>
+                        Beni Daha Yakından Tanıyın
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern OpenLayers Harita Bölümü -->
+        <section id="web-gis-demo">
+            <div class="section-header">
+                <h2 class="section-title">Web GIS & Harita Teknolojileri</h2>
+                <p class="section-subtitle">OpenLayers ile geliştirdiğim interaktif harita uygulamaları ve coğrafi veri görselleştirme çözümleri</p>
+            </div>
+            
+            <div class="map-controls">
+                <button class="map-control-btn active" data-layer="osm">🗺️ Standart Harita</button>
+                <button class="map-control-btn" data-layer="satellite">🛰️ Uydu Görünümü</button>
+                <button class="map-control-btn" data-layer="terrain">⛰️ Topoğrafya</button>
+                <button class="map-control-btn" data-layer="dark">🌙 Koyu Mod</button>
+            </div>
+            
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-overlay">
+                    <div style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px;">🎯 Harita Kontrolleri</div>
+                    <div class="map-overlay-controls">
+                        <button id="zoom-in">+</button>
+                        <button id="zoom-out">-</button>
+                        <button id="reset-view" style="padding: 8px 12px; font-size: 0.8rem; margin-left: 10px; width: auto;">Sıfırla</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-features">
+                <div class="feature-item">
+                    <div>🎯</div>
+                    <div>Gerçek Zamanlı Veri</div>
+                    <div>Canlı veri entegrasyonu ile anlık güncellemeler</div>
+                </div>
+                <div class="feature-item">
+                    <div>🔄</div>
+                    <div>Interaktif Katmanlar</div>
+                    <div>Çoklu harita katmanları ve filtreleme</div>
+                </div>
+                <div class="feature-item">
+                    <div>📱</div>
+                    <div>Responsive Tasarım</div>
+                    <div>Tüm cihazlarda mükemmel performans</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-projects">
+            <div class="section-header">
+                <h2 class="section-title">Öne Çıkan Projeler</h2>
+                <p class="section-subtitle">Harita mühendisliği ve web teknolojilerini birleştiren  çözümler</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-up">
+                    <div class="project-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>İstanbul Deprem Analizi</h3>
+                    <p>Olası İstanbul deprem senaryosuna yönelik olarak, Prof. Dr. Ali Mehmet Celâl Şengör ile birlikte toplanma alanları ve kaçış senaryoları üzerine bir proje başlattık.
+
+</p>
+                    <div class="project-tags">
+                        <span class="project-tag">OpenLayers</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">GIS</span>
+                        <span class="project-tag">API</span>
+                    </div>
+                    <a href="projelerim.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        Detayları Gör <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-icon floating">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Yeşil Alan Optimizasyonu</h3>
+                    <p>Şehir planlamada yeşil alanların optimizasyonu için geliştirdiğim coğrafi veri analiz platformu.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">QGIS</span>
+                        <span class="project-tag">Veri Analizi</span>
+                        <span class="project-tag">Optimizasyon</span>
+                    </div>
+                    <a href="projelerim.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        Detayları Gör <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>3D Bina Modeli</h3>
+                    <p>  Kendi çizdiğim 1/100 ölçekli Beytepe Kampüs Camlı Yemekhane 3D modelini, koordinat referans sistemiyle entegre ederek harita üzerine konumlandırdım.
+</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Three.js</span>
+                        <span class="project-tag">WebGL</span>
+                        <span class="project-tag">3D Modelleme</span>
+                        <span class="project-tag">Interaktif</span>
+                    </div>
+                    <a href="projelerim.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        Detayları Gör <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-features">
+            <div class="section-header">
+                <h2 class="section-title">İlgi Alanlarım</h2>
+                <p class="section-subtitle">Harita mühendisliği ve yazılım geliştirme konularındaki yetkinliklerim</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-end Geliştirme</h3>
+                    <p>Modern web teknolojileri ile kullanıcı dostu ve responsive arayüzler geliştiriyorum.</p>
+                </div>
+                
+                <div class="feature-card fade-up">
+                    <div class="feature-icon floating">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>Web Haritalama</h3>
+                    <p>OpenLayers ve Leaflet kütüphaneleri ile interaktif harita uygulamaları oluşturuyorum.</p>
+                </div>
+                
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Coğrafi Veri Analizi</h3>
+                    <p>Coğrafi verileri işleyerek anlamlı bilgiler çıkaran analitik çözümler geliştiriyorum.</p>
+                </div>
+                
+                <div class="feature-card fade-up">
+                    <div class="feature-icon floating">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Uzaktan Algılama</h3>
+                    <p>Görüntü işleme ve derin öğrenme teknolojilerini kullanarak, gerçek zamanlı tehdit algılama kapasitesine sahip yapay zeka modelleri geliştiriyor ve bu algoritmaları aktif projelerime entegre ediyorum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Telif Hakkı © 2025 - Enes Şavata</p>
+    </footer>
+
+    <!-- OpenLayers JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+    <script>
+        // OpenLayers Modern Harita Başlatma
+        document.addEventListener('DOMContentLoaded', function() {
+            // Harita katmanları
+            const layers = {
+                osm: new ol.layer.Tile({
+                    source: new ol.source.OSM(),
+                    visible: true
+                }),
+                satellite: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attributions: 'Tiles &copy; Esri'
+                    }),
+                    visible: false
+                }),
+                terrain: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}',
+                        attributions: 'Tiles &copy; Esri'
+                    }),
+                    visible: false
+                }),
+                dark: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        url: 'https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+                        attributions: '&copy; CARTO'
+                    }),
+                    visible: false
+                })
+            };
+
+            // Türkiye'deki önemli şehirler
+            const cities = [
+                {
+                    name: "İstanbul", 
+                    coords: [28.9784, 41.0082], 
+                    description: "📊 Nüfus: 15.8M (2024)<br>🗺️ Yüzölçümü: 5,343 km²<br>🚇 Metro Ağı: 187 km"
+                },
+                {
+                    name: "Ankara", 
+                    coords: [32.8597, 39.9334], 
+                    description: "📊 Nüfus: 5.8M (2024)<br>🗺️ Yüzölçümü: 25,632 km²<br>🏢 Kamu Yönetim Merkezi"
+                },
+                {
+                    name: "İzmir", 
+                    coords: [27.1428, 38.4237], 
+                    description: "📊 Nüfus: 4.5M (2024)<br>🗺️ Yüzölçümü: 12,012 km²<br️⚓ Liman Kapasitesi: 90M ton"
+                },
+                {
+                    name: "Antalya", 
+                    coords: [30.7133, 36.8969], 
+                    description: "📊 Nüfus: 2.7M (2024)<br>🗺️ Yüzölçümü: 20,177 km²<br️🏨 Turizm: 16M ziyaretçi/yıl"
+                },
+                {
+                    name: "Trabzon", 
+                    coords: [39.7167, 41.0], 
+                    description: "📊 Nüfus: 818K (2024)<br>🗺️ Yüzölçümü: 4,685 km²<br️🌰 Fındık Üretimi: 200K ton"
+                }
+            ];
+
+            // İşaretleyiciler için vektör katmanı
+            const vectorSource = new ol.source.Vector();
+            
+            cities.forEach(function(city) {
+                const feature = new ol.Feature({
+                    geometry: new ol.geom.Point(ol.proj.fromLonLat(city.coords)),
+                    name: city.name,
+                    description: city.description
+                });
+                
+                const iconStyle = new ol.style.Style({
+                    image: new ol.style.Icon({
+                        anchor: [0.5, 1],
+                        src: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="%238B5CF6" stroke="white" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>',
+                        scale: 1
+                    }),
+                    text: new ol.style.Text({
+                        text: city.name,
+                        offsetY: -25,
+                        font: 'bold 12px Arial',
+                        fill: new ol.style.Fill({color: '#8B5CF6'}),
+                        stroke: new ol.style.Stroke({color: '#ffffff', width: 3})
+                    })
+                });
+                
+                feature.setStyle(iconStyle);
+                vectorSource.addFeature(feature);
+            });
+
+            const vectorLayer = new ol.layer.Vector({
+                source: vectorSource
+            });
+
+            // Harita oluşturma
+            const map = new ol.Map({
+                target: 'map',
+                layers: [
+                    layers.osm,
+                    layers.satellite,
+                    layers.terrain,
+                    layers.dark,
+                    vectorLayer
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([35.2433, 39.1237]),
+                    zoom: 5.5,
+                    minZoom: 5,
+                    maxZoom: 15
+                })
+            });
+
+            // Popup için overlay
+            const popup = new ol.Overlay({
+                element: document.createElement('div'),
+                positioning: 'bottom-center',
+                stopEvent: false
+            });
+            popup.getElement().className = 'ol-popup';
+            popup.getElement().style.cssText = 'background: var(--card-bg); border: 1px solid var(--accent); border-radius: 12px; padding: 12px 16px; color: var(--text-primary); font-size: 0.9rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); backdrop-filter: blur(10px);';
+            map.addOverlay(popup);
+
+            // Katman değiştirme butonları
+            document.querySelectorAll('.map-control-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.map-control-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const layerType = this.getAttribute('data-layer');
+                    Object.keys(layers).forEach(key => {
+                        layers[key].setVisible(key === layerType);
+                    });
+                });
+            });
+
+            // Zoom kontrolleri
+            document.getElementById('zoom-in').addEventListener('click', () => {
+                map.getView().animate({
+                    zoom: map.getView().getZoom() + 1,
+                    duration: 250
+                });
+            });
+
+            document.getElementById('zoom-out').addEventListener('click', () => {
+                map.getView().animate({
+                    zoom: map.getView().getZoom() - 1,
+                    duration: 250
+                });
+            });
+
+            document.getElementById('reset-view').addEventListener('click', () => {
+                map.getView().animate({
+                    center: ol.proj.fromLonLat([35.2433, 39.1237]),
+                    zoom: 5.5,
+                    duration: 500
+                });
+            });
+
+            // Tıklama olayı
+            map.on('click', function(evt) {
+                const feature = map.forEachFeatureAtPixel(evt.pixel, function(feature) {
+                    return feature;
+                });
+                
+                if (feature) {
+                    const coordinates = feature.getGeometry().getCoordinates();
+                    const name = feature.get('name');
+                    const description = feature.get('description');
+                    
+                    popup.setPosition(coordinates);
+                    popup.getElement().innerHTML = `
+                        <div style="font-weight: 600; margin-bottom: 8px; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">${name}</div>
+                        <div style="font-size: 0.8rem;">${description}</div>
+                    `;
+                } else {
+                    popup.setPosition(undefined);
+                }
+            });
+
+            // İmleç değişikliği
+            map.on('pointermove', function(evt) {
+                const pixel = map.getEventPixel(evt.originalEvent);
+                const hit = map.hasFeatureAtPixel(pixel);
+                map.getTargetElement().style.cursor = hit ? 'pointer' : '';
+            });
+        });
+    </script>
+
+</body>
+</html> 
